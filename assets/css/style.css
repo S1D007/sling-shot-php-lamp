@@ -1,0 +1,249 @@
+/* Style for the screens */
+*{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.screen {
+    display: none;
+  }
+  
+  #screen1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#screen1 .container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#screen1 video {
+/*    width: 50vw;*/
+    /*height: 50vh;*/
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    border-radius:200%;
+    object-fit: cover;
+}
+
+#screen1 #capturedImage{
+  display:none;
+  position: absolute;
+  top: 40%;
+  /*height: 51%;*/
+  width: 25vw;
+  height: 50vh;
+  border-radius:200%;
+  left: 32%;
+  transform: rotatey(180deg);  
+}
+
+
+#screen1 #captureBtn {
+  position: absolute;
+  bottom: 15px;
+  left: 42%;
+  padding: 10px 30px;
+  background: #F28F15;
+/*  background-image: url('../img/Asset 2@400x.png');*/
+  background-size: 100% 100%;
+  border-radius: 200px;
+  color: white;
+  border: 0;  
+/*  border: 1px solid #d7b56d;*/
+/*  margin-top: 20px;*/
+}
+
+#screen1 #retakeBtn {
+  position: absolute;
+  bottom: 15px;
+  left: 36%;  
+  padding: 10px 30px;
+  background: #F28F15;
+  background-size: 100% 100%;
+  border: 0;  
+  border-radius: 200px;
+  color: white;  
+}
+
+#screen1 #nextBtn {
+  position: absolute;
+  bottom: 15px;
+  left: 48%;
+/*  color: white;*/
+  padding: 10px 30px;
+  background: #F28F15;
+  background-size: 100% 100%;
+  border: 0;  
+  border-radius: 200px;
+  color: white;
+/*  border: 1px solid #d7b56d;*/
+}
+
+#photoPreview{
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+}
+  
+  /* Style for the inputs and button in Screen 2 */
+  #nameInput,
+  #messageInput,
+ #emailInput,#mobileInput,#employeeID {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /*border: 2px solid #F72461;
+    color: #F72461;*/
+    font-weight: 900;
+    height: 50px;
+    font-size: larger;
+    border: 1px solid #F28F15;
+    background-size: 100% 100%;
+    color: black;
+  }
+/*
+  #nameInput{
+    background-image: url('../img/name.png');
+  border: 1px solid #F28F15;
+    background-size: 100% 100%;
+    color: black;
+  }
+
+  #mobileInput{
+    background-image: url('../img/mobile.png');
+    border: 1px solid #F28F15;
+    background-size: 100% 100%;
+    color:white;
+  }*/
+
+  /*#mobileInput::placeholder{
+    color:white;
+  }*/
+
+  /*#nameInput::placeholder{
+    color: black;
+  }*/
+  
+
+  #submitBtn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;    
+    background: #F28F15;
+    background-size: 100% 100%;
+    border: 0;  
+    border-radius: 200px;
+    color: white;
+
+/*    border: 1px solid #d7b56d;*/
+  }
+
+  #lock{
+    background: #F28F15;
+  background-size: 100% 100%;
+    border: 0;  
+    border-radius: 200px;
+    color: white;
+/*    border: 1px solid #d7b56d;*/
+    width: 20%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  /* Style for the success message in Screen 3 */
+  #screen3 {
+    text-align: center;
+  }
+  
+#uploadNoteBtn{
+  position: absolute;
+  top: 50%;
+  left: 44%;
+}
+
+#success-msg{
+  position: absolute;
+  top: 40%;
+  left: 32%;
+}
+
+@media only screen and (max-width:900px){
+  #screen1 video{
+    top:27%;  
+    left: 21%;   
+    width: 60vw !important;  
+    height: 30vh !important;
+  }  
+
+  #screen1 #capturedImage{
+    top:27%;  
+    left: 21%;   
+    width: 60vw;  
+    height: 30vh;
+  }
+
+  #screen1 #captureBtn{
+    left: 33%;
+    bottom: 34%;
+  }
+
+  #screen1 #retakeBtn{
+    left: 20%;
+    bottom: 34%;
+  }
+
+  #screen1 #nextBtn{
+    left: 56%;
+    bottom: 34%;
+  }
+
+  #custom-form{
+    position: absolute;
+    top: 20%;
+    left:10%;
+    width: 80%;
+  }
+
+  #uploadNoteBtn{
+    left: 33%;
+  }
+
+  #success-msg{
+  position: absolute;
+  top: 40%;
+  left: 8%;
+}
+
+#lock{
+      width: 60%;
+      height: 70px;
+}
+
+#submitBtn{
+  height: 70px;
+  position: absolute;
+  bottom: -50%;
+  width: 60%;
+  left: 20%;
+}
+
+.custom-drone{
+  width: 100px;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  z-index: 99999;
+}
+}

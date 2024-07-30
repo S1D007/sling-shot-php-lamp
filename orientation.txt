@@ -1,0 +1,1 @@
+{"alpha":"270.3","beta":"70.3","gamma":"6.2","tracker":"true"}
